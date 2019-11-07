@@ -21,13 +21,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: { modules: true, localIdentName: '[hash:base64:8]' },
-          },
-        ],
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.js$/,
